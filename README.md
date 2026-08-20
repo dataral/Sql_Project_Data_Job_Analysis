@@ -57,11 +57,12 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 ```
-![Top Paying Roles] (assetts\top_paying_job_skills.png)
+![Top Paying Roles](assetts\top_paying_jobs.png)
 
 ### 2. Skills for Top Paying Jobs
 
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
+
 
 ```sql
 WITH top_paying_jobs AS (
@@ -91,7 +92,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC;
 ```
-
+![Top Paying JObs](assetts\top_paying_job_skills.png)
 ### 3. In-Demand Skills for Data Analysts
 
 This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
@@ -112,6 +113,17 @@ ORDER BY
     demand_count DESC
 LIMIT 5;
 ```
+
+
+ ### Top In-Demand Skills for Data Analysts
+
+| Rank | Skill | Demand Count | Share (%) |
+| :---: | :--- | :---: | :---: |
+| 1 | **SQL** | 7,291 | 32.3% |
+| 2 | **Excel** | 4,611 | 20.4% |
+| 3 | **Python** | 4,330 | 19.2% |
+| 4 | **Tableau** | 3,745 | 16.6% |
+| 5 | **Power BI** | 2,609 | 11.6% |
 
 ### 4. Skills Based on Salary
 
@@ -134,6 +146,35 @@ ORDER BY
     avg_salary DESC
 LIMIT 25;
 ```
+### Top 25 Highest-Paying Skills for Data Analysts
+
+| Rank | Skill | Category / Domain | Average Annual Salary (USD) |
+| :---: | :--- | :--- | :---: |
+| 1 | **PySpark** | Big Data / Distributed Computing | $208,172 |
+| 2 | **Bitbucket** | Version Control & CI/CD | $189,155 |
+| 3 | **Couchbase** | NoSQL Database | $160,515 |
+| 4 | **Watson** | AI & Machine Learning | $160,515 |
+| 5 | **DataRobot** | Automated Machine Learning | $155,486 |
+| 6 | **GitLab** | DevOps & CI/CD | $154,500 |
+| 7 | **Swift** | Software Engineering / Mobile | $153,750 |
+| 8 | **Jupyter** | Data Science & Research | $152,777 |
+| 9 | **Pandas** | Data Manipulation & Analysis | $151,821 |
+| 10 | **Elasticsearch** | Search Engine & Indexing | $145,000 |
+| 11 | **Golang** | Systems & Backend Programming | $145,000 |
+| 12 | **NumPy** | Numerical Computing | $143,513 |
+| 13 | **Databricks** | Unified Analytics & Lakehouse | $141,907 |
+| 14 | **Linux** | Operating Systems & Infrastructure | $136,508 |
+| 15 | **Kubernetes** | Container Orchestration | $132,500 |
+| 16 | **Atlassian** | Project Management & Workflow | $131,162 |
+| 17 | **Twilio** | Cloud Communications Platform | $127,000 |
+| 18 | **Airflow** | Data Pipeline & Workflow Orchestration | $126,103 |
+| 19 | **Scikit-Learn** | Machine Learning | $125,781 |
+| 20 | **Jenkins** | Automation & CI/CD | $125,436 |
+| 21 | **Notion** | Productivity & Documentation | $125,000 |
+| 22 | **Scala** | Distributed Systems Programming | $124,903 |
+| 23 | **PostgreSQL** | Relational Database | $123,879 |
+| 24 | **GCP** | Cloud Infrastructure | $122,500 |
+| 25 | **MicroStrategy** | Business Intelligence & Reporting | $121,619 |
 
 ### 5. Most Optimal Skills to Learn
 
@@ -161,6 +202,8 @@ ORDER BY
     demand_count DESC
 LIMIT 25;
 ```
+![Most Optimal Skills](assetts\optimal_skills.png)
+
 # What I Learned
 Throughout this adventure, I've turbocharged my SQL toolkit with some serious firepower:
 
