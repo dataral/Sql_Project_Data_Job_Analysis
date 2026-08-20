@@ -57,6 +57,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 ```
+![Top Paying Roles] (assetts\top_paying_job_skills.png)
 
 ### 2. Skills for Top Paying Jobs
 
