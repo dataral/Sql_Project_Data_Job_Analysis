@@ -1,7 +1,8 @@
 # Introduction
 Dive into the data job market! Focusing on data analyst roles, this project explores 💰 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data analytics.
 
-SQL queries? Check them out here: [project_sql folder]
+SQL queries? Check them out here: 
+[project_sql folder](project_sql)
 
 
 
@@ -57,7 +58,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 ```
-![Top Paying Roles](assetts\top_paying_jobs.png)
+![Top Paying Roles](assetts/top_paying_jobs.png)
 
 ### 2. Skills for Top Paying Jobs
 
@@ -92,7 +93,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC;
 ```
-![Top Paying JObs](assetts\top_paying_job_skills.png)
+![Top Paying JObs](assetts/top_paying_job_skills.png)
 ### 3. In-Demand Skills for Data Analysts
 
 This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
@@ -202,7 +203,7 @@ ORDER BY
     demand_count DESC
 LIMIT 25;
 ```
-![Most Optimal Skills](assetts\optimal_skills.png)
+![Most Optimal Skills](assetts/optimal_skills.png)
 
 # What I Learned
 Throughout this adventure, I've turbocharged my SQL toolkit with some serious firepower:
